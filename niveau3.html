@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!---
+    Formulaires en HTML:
+        1. Balise <form> => attributs action, method (get, post)
+
+            2. Champs de formulaire:
+                                <input> => text, password, radio, checkbox, submit, reset, file, hidden, button, image, date, email, number...
+                                <textarea> </textarea>
+
+                                <select>
+                                    <option> </option>
+                                </select>
+
+            3. Attributs communs aux champs de formulaire: name, value, placeholder, required, disabled, readonly, maxlength, size...
+            4. Labels: <label> => associer un texte à un champ de formulaire
+-->
+<body>
+    <h3> Formulaire de candidature</h3>
+    <br>
+    <p>
+        Merci de candidater à nos pratiques. Veiller completer le formulaire d'inscription des patients avec vos 
+        informations et un médecin vous contactera dans les plus brefs délais.
+        </p><hr>
+    <form action="" method="post">
+
+        <label for="date_jour"> Date d'aujourd'hui</label><br><br>
+<input type="date" id="date_jour" name="date_jour"><br><br>
+<label for="nom"> Nom du patient</label><br><br>
+<input type="text" id="prenom" name="nom" placeholder="Prenom" required><br><br>
+<input type="text" id="nom" name="nom" placeholder="Nom" required><br><br>
+
+<br>
+<label for="sexe">sexe</label><br><br>
+<select name="sexe" id="sexe" >
+    <option value="m">Masculin</option>
+    <option value="f">Feminin</option>
+    </select>
+
+    <br><br>
+    <label for="tel">Téléphone</label><br><br>
+    <input type="number" name="tel" id="tel" required><br><br>
+
+    <label for="date_naiss">Date de Naissance</label><br><br>
+    <input type="date" id="date_naiss" name="date_naiss" required><br><br>
+
+    <input type="submit" value="Envoyer">
+
+</form>
+    
+</body>
+</html>
